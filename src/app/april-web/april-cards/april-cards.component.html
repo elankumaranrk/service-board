@@ -6,11 +6,11 @@
     {{title}}
   </h2>
   <ol>
-    <li *ngFor="let article of articles">
+    <li *ngFor="let method of methods">
     
-       {{article.t}}
-         <span (click)="actNow()" class="chatBotConv" [attr.data-chat-conv]="article.chatConv" *ngIf="article.action == 'required'">ACT NOW</span>
+       {{method.desc}}
+         <span (click)="actNow()" class="chatBotConv" [attr.data-chat-conv]="method.chatConv" *ngIf="method.action == 'required'">ACT NOW</span>
     </li>
   </ol>
-  <a *ngIf="title == 'Support'" (click)="actNow()" class="learn-more" data-trackevent="01-doodles" target="_blank" title="Learn More">Talk To An Expert</a>
+  <a  [routerLink]="['/services', id]"  class="learn-more" data-trackevent="01-doodles"  title="Learn More">Learn More</a>
 </section>

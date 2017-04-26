@@ -1,10 +1,10 @@
 .card {
   cursor: pointer;
-  height: 300px !important;
+  height: 320px !important;
   transition: transform .4s cubic-bezier(.25, .46, .45, .94), opacity .4s cubic-bezier(.25, .46, .45, .94), box-shadow 300ms cubic-bezier(.25, .46, .45, .94), background-color 300ms cubic-bezier(.25, .46, .45, .94), -webkit-transform .4s cubic-bezier(.25, .46, .45, .94);
-  -moz-box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, .15);
-  -webkit-box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, .15);
-  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, .15);
+  -moz-box-shadow: 1px 4px 6px 5px rgba(0, 0, 0, .10);
+  -webkit-box-shadow: 1px 4px 6px 5px rgba(0, 0, 0, .10);
+  box-shadow: 1px 4px 6px 5px rgba(0, 0, 0, .10);
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -20,8 +20,8 @@
 }
 
 .card:hover {
-  box-shadow: 1px 8px 12px 8px rgba(0, 0, 0, .15);
-  transform: translateY(-2px) scale(1.02);
+  box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, .15);
+  transform: translateY(0px) scale(1);
 }
 
 .card-top img {
@@ -36,6 +36,7 @@
 }
 
 .card h2 {
+  color: #02b3e4 !important;
   font-size: 22px;
   padding: 25px 25px 0;
   font-weight: 300;
@@ -70,19 +71,21 @@
   -webkit-transition: color 300ms cubic-bezier(.25, .46, .45, .94);
   transition: color 300ms cubic-bezier(.25, .46, .45, .94);
   bottom: 0;
-  color: #448aff;
+  color: #02b3e4 !important;
   font-size: 15px;
   font-weight: 400;
   margin-bottom: 25px;
   position: absolute;
   text-decoration: none;
+  text-align: right;
+  right: 0;
 }
 
 ol {
   padding: 0 20px;
   margin: 10px;
   margin-bottom: 65px;
-  list-style: square;
+  list-style: none;
   list-style-position: unset;
 }
 
@@ -90,8 +93,14 @@ li {
   color: #848484;
   font-weight: 400;
   line-height: 1.5em;
-  font-size: 14px;
-  padding: 1px 5px;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+li:before {
+  background: url(assets/svg/tick.svg) 0 7px no-repeat;
+  content: '';
+  padding-right: 22px
 }
 
 span {

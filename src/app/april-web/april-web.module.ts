@@ -15,6 +15,7 @@ import { AngularFireModule, AuthProviders, AuthMethods } from 'angularfire2';
 import { AprilSettingsComponent } from './april-settings/april-settings.component';
 import { AprilEmailComponent } from './april-email/april-email.component';
 import { AprilSettingsCardComponent } from './april-settings-card/april-settings-card.component';
+import {ServiceDetailComponent} from './april-service-detail/april-service-detail.component'
 
 export const firebaseConfig = {
   apiKey: "AIzaSyDF4SWIpepMmZV7V7fimmKxCJz3GZeh18w",
@@ -35,7 +36,7 @@ const myFirebaseAuthConfig = {
     AprilWebRoutingModule,
     AngularFireModule.initializeApp(firebaseConfig, myFirebaseAuthConfig)
   ],
-  declarations: [AprilCardsComponent, AprilFooterComponent, AprilHeaderComponent, AprilBotComponent, AprilContainerComponent, AprilWebComponent, AprilSettingsComponent, AprilEmailComponent, AprilSettingsCardComponent],
+  declarations: [AprilCardsComponent, AprilFooterComponent, AprilHeaderComponent, AprilBotComponent, AprilContainerComponent, AprilWebComponent, AprilSettingsComponent, AprilEmailComponent, AprilSettingsCardComponent, ServiceDetailComponent],
   exports: [AprilWebComponent],
   providers: [AprilWebService]
 })

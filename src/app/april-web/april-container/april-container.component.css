@@ -23,7 +23,7 @@ april-cards {
     flex-direction: column;
   }
   april-cards {
-    flex: 1 450px;
+    flex: 1 350px;
     display: block;
   }
   .hero {

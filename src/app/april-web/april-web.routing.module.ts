@@ -3,7 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AprilContainerComponent } from './april-container/april-container.component';
 import { AprilSettingsComponent } from './april-settings/april-settings.component';
-import {AprilEmailComponent} from './april-email/april-email.component'
+import { AprilEmailComponent } from './april-email/april-email.component'
+import { ServiceDetailComponent } from './april-service-detail/april-service-detail.component'
 
 const routes: Routes = [
     {
@@ -16,8 +17,8 @@ const routes: Routes = [
         path: 'settings', component: AprilSettingsComponent
     },
     {
-        path:'email', component:AprilEmailComponent
-    }
+        path: 'email', component: AprilEmailComponent
+    }, { path: 'services/:id', component: ServiceDetailComponent }
 
 ];
 

@@ -1,5 +1,5 @@
 <div class="cards" [class.m]="openSearch==true">
-  <april-cards (beginChat)="cardClicked($event)" *ngFor="let item of cardData | slice:0:4;" [title]="item.title" [articles]="item.articles" [cardImage]="item.cardImage"></april-cards>
+  <april-cards (beginChat)="cardClicked($event)" *ngFor="let item of cardData | slice:0:4;" [title]="item.title" [id]="item.id"[methods]="item.methods" [cardImage]="item.cardImage"></april-cards>
 </div>
 <!--<div *ngIf="!(af.auth | async)" class="log">
   <div >

@@ -22,8 +22,9 @@ import { trigger, state, style, transition, animate, group } from '@angular/core
   ]
 })
 export class AprilCardsComponent implements OnInit {
+  @Input() id:String;
   @Input() title: String;
-  @Input() articles: Array<Object>;
+  @Input() methods: Array<Object>;
   @Input() cardImage: String;
   @Output() beginChat = new EventEmitter();
   constructor() { }
